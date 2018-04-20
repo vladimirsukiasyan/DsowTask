@@ -20,12 +20,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -98,30 +94,30 @@ public class MainActivity extends AppCompatActivity{
         mQuery = mFirestore.collection("tasks");
     }
 
-    private void onAddItemsClicked() {
-        // Add a bunch of random restaurants
-        WriteBatch batch = mFirestore.batch();
-        for (int i = 0; i < 3; i++) {
-            DocumentReference restRef = mFirestore.collection("tasks").document();
-
-            // Create random restaurant / ratings
-            Task task=new Task();
-
-            // Add restaurant
-            batch.set(restRef, randomRestaurant);
-        }
-
-        batch.commit().addOnCompleteListener(new OnCompleteListener<Void>() {
-            @Override
-            public void onComplete(@NonNull Task<Void> task) {
-                if (task.isSuccessful()) {
-                    Log.d(TAG, "Write batch succeeded.");
-                } else {
-                    Log.w(TAG, "write batch failed.", task.getException());
-                }
-            }
-        });
-    }
+//    private void onAddItemsClicked() {
+//        // Add a bunch of random restaurants
+//        WriteBatch batch = mFirestore.batch();
+//        for (int i = 0; i < 3; i++) {
+//            DocumentReference restRef = mFirestore.collection("tasks").document();
+//
+//            // Create random restaurant / ratings
+//            Task task=new Task("SDFs","Test",23456432);
+//
+//            // Add restaurant
+//            batch.set(restRef, randomRestaurant);
+//        }
+//
+//        batch.commit().addOnCompleteListener(new OnCompleteListener<Void>() {
+//            @Override
+//            public void onComplete(@NonNull Task<Void> task) {
+//                if (task.isSuccessful()) {
+//                    Log.d(TAG, "Write batch succeeded.");
+//                } else {
+//                    Log.w(TAG, "write batch failed.", task.getException());
+//                }
+//            }
+//        });
+//    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
