@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "380110583535",
+    "firebase_url": "https://dsowtask-1.firebaseio.com",
+    "project_id": "dsowtask-1",
+    "storage_bucket": "dsowtask-1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:380110583535:android:149f2a7bb172ba55",
+        "android_client_info": {
+          "package_name": "dsow.dsowtask"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "380110583535-o32ns0cs6v5l0mq70u7tto22rvfl9lqa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dsow.dsowtask",
+            "certificate_hash": "7b0e6d0ede6816b69a7699a9195a08a03aefdbc4"
+          }
+        },
+        {
+          "client_id": "380110583535-hs51mspoar8ui3spjlajm0rm034b7d4o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-zaDDreDvDrQaireUyY_Q_BN2DmG-tAI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "380110583535-hs51mspoar8ui3spjlajm0rm034b7d4o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
