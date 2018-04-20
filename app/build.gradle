@@ -4,6 +4,7 @@ android {
     compileSdkVersion 26
     defaultConfig {
         applicationId "dsow.dsowtask"
+        vectorDrawables.useSupportLibrary = true
         minSdkVersion 15
         targetSdkVersion 26
         versionCode 1
